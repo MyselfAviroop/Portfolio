@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" /><!-- Include AOS CSS and JS in the <head> -->
+      <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+      
+      <!-- Initialize AOS at the end of the <body> or within a DOMContentLoaded event -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          AOS.init({  
+            duration: 1200, // Animation duration in milliseconds
+            once: false, // Whether animation should happen only once - while scrolling down
+            easing: 'ease-in-out', // Easing function
+          });
+        });
+      </script>
+      
+    
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  <script src="index.js" defer></script>
+  <title>Portfolio</title>
+</head>
+
+
+<body>
+  <div class="input" style="overflow: auto;">
+    <div class="navi" style="z-index: 10000;">
+      <nav class="navbar navbar-expand-lg bg-black fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-aqua" href="#">Aviroop Ghosh </a>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <button class="nav-link" onclick="transitionPage('homesection')">
+                  Home
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link text-aqua" onclick="transitionPage('aboutSection')">
+                  About
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link text-aqua" onclick="transitionPage('projectsSection')">
+                  Projects
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link text-aqua" onclick="transitionPage('contactSection')">
+                  Contact
+                </button>
+              </li>
+            </ul>
+          </div>
+          <script>
+
+          </script>
+
+          <div class="menubar" onclick="showSidebar()">
+            <a href="javascript:void(0);">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" background-color="none"
+                width="24px" fill="#75ffe8">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidebar" style="transform: translateX(0);">
+      <a onclick="hideSidebar()">
+        <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" viewBox="0 -960 960 960"
+          background-color="none" fill="#FFFFFF">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+        </svg>
+      </a>
+
+      <li class="nav-item">
+        <button class="nav-link" onclick="transitionPage('homesection')">
+          Home
+        </button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link text-aqua" onclick="transitionPage('aboutSection')">
+          About
+        </button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link text-aqua" onclick="transitionPage('projectsSection')">
+          Projects
+        </button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link text-aqua" onclick="transitionPage('contactSection')">
+          Contact
+        </button>
+      </li>
+
+    </ul>
+    <section>
+      <div class="main" id="homesection" data-aos="fade-left" style="height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <div class="about" style="text-align: center;">
+          <div class="name" style=" color: white;">
+            <h2 data-aos="fade-right" data-aos-delay="100" style="font-family: 'Arial', sans-serif; font-size: 2.5rem; margin: 0; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">
+              Hello, I'm
+            </h2>
+            <h1 data-aos="fade-right" data-aos-delay="200" style="color: aqua; font-family: 'Montserrat', sans-serif; font-size: 4rem; margin: 0; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">
+              Aviroop Ghosh
+            </h1>
+            <h2 data-aos="fade-right" data-aos-delay="300" style="font-family: 'Arial', sans-serif; font-size: 2rem; margin: 0; color: #08a88a; text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);">
+              Full-Stack Web Developer
+            </h2>
+            <h5 data-aos="fade-right" data-aos-delay="400" style="font-family: 'Montserrat', sans-serif; font-size: 2rem; margin: 1rem 0; color: #ffffff; text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);">
+              With knowledge in web development and design, I offer the best projects, resulting in quality work.
+            </h5>
+          </div>
+          <div class="send" data-aos="zoom-in" data-aos-delay="500">
+            <button onclick="transitionPage('contactSection')" style="margin-bottom: 15px; border-radius: 10px;" type="submit">Let's Talk</button>
+          </div>
+          <div class="social-icons" style=" 
+            transform: translateX(-100%);
+            animation: slideInLeft 1s forwards;">
+        <a2 href="https://x.com/AviroopGhosh12" target="_blank" class="social-icon">
+          <lord-icon  src="https://cdn.lordicon.com/lhscugaw.json" trigger="hover" stroke="bold"
+            state="hover-draw" colors="primary:#ffffff,secondary:#08a88a"></lord-icon>
+        </a2>
+        <a2 href="https://github.com/MyselfAviroop" target="_blank" class="social-icon1">
+          <lord-icon src="https://cdn.lordicon.com/vyahiuge.json" trigger="hover" stroke="bold"
+            colors="primary:#ffffff,secondary:#ffffff" style="top: 5px;"></lord-icon>
+        </a2>
+        <a2
+          href="https://www.linkedin.com/in/aviroop-ghosh-44776a292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank" class="social-icon">
+          <lord-icon src="https://cdn.lordicon.com/mdyiqybm.json" trigger="hover" stroke="bold" state="hover-draw"
+            colors="primary:#ffffff,secondary:#08a88a" style="top: 5px;"></lord-icon>
+        </a2>
+      </div>
+        </div>
+        <div class="hexagon-part" data-aos="fade-left" data-aos-delay="700">
+          <div class="hexagon-shape"></div>
+        </div>
+      </div>
+    </section>
+    
+<div class="pagrbreak" style="background-color: white;width: 100%; height: 4px;"></div>
+
+
+    <!------SKILL SECTION------><!------ABOUT US SECTION------>
+   
+    <!------SKILL SECTION------><!------ABOUT US SECTION------>
+<div class="skillsec" id="aboutSection" data-aos="fade-up" style="width: 100vw; height: 100%;">
+  <div class="main-section bg-lightgrey" style="padding: 20px;">
+    <div class="acontainer">
+      <div class="hexagon-part" style="padding-top: 5vw;" data-aos="zoom-in" data-aos-delay="100">
+        <div class="hexagon-shape1"></div>
+      </div>
+      <div class="width-50">
+        <div class="about-us">
+          <h2 class="heading-text" data-aos="fade-right" style=" font-family: 'Roboto', sans-serif; font-size: 3rem; color: aqua;">
+            About me
+          </h2>
+          <h3 data-aos="fade-up" data-aos-delay="100" style="font-family: 'Roboto', sans-serif; font-size: 2.5rem; color: #fffcfc;">
+            I am available for Software Development Projects
+          </h3>
+          <p data-aos="fade-up" data-aos-delay="200" style="font-family: 'Arial', sans-serif; font-size: 1.5rem; color: #666; line-height: 1.5;">
+            Hi, I am Aviroop Ghosh, from India. I’m a passionate web developer skilled in creating dynamic websites. I continuously explore new technologies, especially in AI and web development, to enhance my skills.
+          </p>
+          <div class="myself" data-aos="slide-up" data-aos-delay="300">
+            <div class="abt" data-aos="slide-right" data-aos-delay="400">
+              <table cellspacing="8" cellpadding="8" style="font-family: 'Arial', sans-serif; font-size: 1rem; color: #747474;">
+                <tr>
+                  <th>Name:</th>
+                  <td>Aviroop Ghosh</td>
+                </tr>
+                <tr>
+                  <th>City:</th>
+                  <td>West Bengal, India</td>
+                </tr>
+                <tr>
+                  <th>Birthday:</th>
+                  <td>19 June, 2005</td>
+                </tr>
+                <tr>
+                  <th>Study:</th>
+                  <td>Techno India University</td>
+                </tr>
+              </table>
+            </div>
+            <div class="abt2" data-aos="slide-left" data-aos-delay="500">
+              <table cellspacing="8" cellpadding="8" style="font-family: 'Arial', sans-serif; font-size: 1rem; color: #444;">
+                <tr>
+                  <th>
+                    <lord-icon src="https://cdn.lordicon.com/mahizafr.json" trigger="hover" stroke="bold" colors="primary:#ffffff,secondary:#ffffff" style="top: 10px;"></lord-icon>
+                    :
+                  </th>
+                  <td>...</td>
+                </tr>
+                <tr>
+                  <th>
+                    <lord-icon src="https://cdn.lordicon.com/ebjjjrhp.json" trigger="hover" stroke="bold" state="hover-spin" colors="primary:#ffffff,secondary:#e4e4e4" style="top: 8px;"></lord-icon>
+                    :
+                  </th>
+                  <td>ghoshaviroop542@gmail.com</td>
+                </tr>
+                <tr>
+                  <th>
+                    <lord-icon src="https://cdn.lordicon.com/trkmlure.json" trigger="hover" stroke="bold" state="hover-rotate-up-to-down" colors="primary:#ffffff,secondary:#e4e4e4" style="top: 8px;"></lord-icon>
+                    :
+                  </th>
+                  <td>www.aviroop.com</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-section2" data-aos="fade-up" data-aos-delay="600">
+    <div class="container">
+      <h2 class="heading-text" style="font-family: 'Roboto', sans-serif; font-size: 2.5rem; color: aqua;">
+        My Skills
+      </h2>
+      <div class="skillcontainer">
+        <div class="pbar" data-aos="fade-right" data-aos-delay="500">
+          <div class="skill" style="display: flex; justify-content: space-between; align-items: center;">
+            <b style="font-family: 'Arial', sans-serif; font-size: 1rem; color: #fffcfc;">HTML</b>
+            <span style="font-family: 'Arial', sans-serif; font-size: 1rem; color: #ffffff;">95%</span>
+            <div style="background: #e0e0e0; border-radius: 10px; width: 80%; height: 10px; margin-left: 10px;">
+              <span style="width: 95%; background: #08a88a; height: 100%; display: block; border-radius: 10px;"></span>
+            </div>
+          </div>
+          <div class="skill" style="display: flex; justify-content: space-between; align-items: center;">
+            <b style="font-family: 'Arial', sans-serif; font-size: 1rem; color: #ffffff;">CSS</b>
+            <span style="font-family: 'Arial', sans-serif; font-size: 1rem; color: #ffffff;">91%</span>
+            <div style="background: #e0e0e0; border-radius: 10px; width: 80%; height: 10px; margin-left: 10px;">
+              <span style="width: 91%; background: #08a88a; height: 100%; display: block; border-radius: 10px;"></span>
+            </div>
+          </div>
+          <div class="skill" style="display: flex; justify-content: space-between; align-items: center;">
+            <b style="font-family: 'Arial', sans-serif; font-size: 1rem; color: #ffffff;">JavaScript</b>
+            <span style="font-family: 'Arial', sans-serif; font-size: 1rem; color: #444;">85%</span>
+            <div style="background: #e0e0e0; border-radius: 10px; width: 80%; height: 10px; margin-left: 10px;">
+              <span style="width: 85%; background: #08a88a; height: 100%; display: block; border-radius: 10px;"></span>
+            </div>
+          </div>
+          <div class="skill" style="display: flex; justify-content: space-between; align-items: center;">
+            <b style="font-family: 'Arial', sans-serif; font-size: 1rem; color: #ffffff;">React js</b>
+            <span style="font-family: 'Arial', sans-serif; font-size: 1rem; color: #ffffff;">79%</span>
+            <div style="background: #e0e0e0; border-radius: 10px; width: 80%; height: 10px; margin-left: 10px;">
+              <span style="width: 79%; background: #08a88a; height: 100%; display: block; border-radius: 10px;"></span>
+            </div>
+          </div>
+        </div>
+        <div class="circle" style="margin-top: 30px; gap: 10; display: flex; justify-content: center; align-items: center;" data-aos="zoom-in" data-aos-delay="800">
+          <div class="circle1">
+            <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value: 65; font-family: 'Arial', sans-serif; font-size: 1rem; color: white;">
+              React-65
+            </div>
+            <div role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="--value: 85; font-family: 'Arial', sans-serif; font-size: 1rem; color: white;">
+              Jquery-85
+            </div>
+          </div>
+          <div class="circle2">
+            <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value: 65; font-family: 'Arial', sans-serif; font-size: 1rem; color: white;">
+              Vue-65
+            </div>
+            <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="--value: 70; font-family: 'Arial', sans-serif; font-size: 1rem; color: white;">
+              Node-70
+            </div>
+          </div>
+          <div class="circle3">
+            <div role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="--value: 80; font-family: 'Arial', sans-serif; font-size: 1rem; color: white;">
+              Angular-80
+            </div>
+            <div role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="--value: 90; font-family: 'Arial', sans-serif; font-size: 1rem; color: white;">
+              Express.js-90
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <div class="pagrbreak" style="background-color: white;width: 100%; height: 4px;"></div>
+    <!----project section--->
+
+    <section class="portfolio-section" style="height: 100%;" id="projectsSection"  data-aos="zoom-in">
+      <h2 class="portfolio-heading" style="animation: fadeIn 1s ease-in forwards;
+   opacity: 0;">My Projects</h2>
+
+      <div class="projects-container">
+        <!-- Project 1 -->
+
+        <div class="project"  data-aos="fade-down">
+          <a href="https://github.com/MyselfAviroop/password-_saver-using-react"> <img src="Screenshot (27).png"
+              alt="Project 1" />
+            <h3 style="color: white;">Password Manager</h3>
+            <p style="color: white;">Brief description of the project goes here.</p>
+        </div></a>
+
+        <!-- Project 2 -->
+        <div class="project"  data-aos="fade-down">
+          <img src="Screenshot (28).png" alt="Project 2" />
+          <h3 style="color: white;">React Form</h3>
+          <p style="color: white;">Brief description of the project goes here.</p>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project"  data-aos="fade-down">
+          <a href="https://github.com/MyselfAviroop/amazon-clone-first-work-"> <img src="Screenshot (29).png" />
+            <h3 style="color: white;">Amazon clone</h3>
+            <p style="color: white;" style="color: white;">Brief description of the project goes here.</p>
+        </div></a>
+
+        <div class="project"  data-aos="fade-up">
+          <img src="Screenshot (28).png" alt="Project 4" />
+          <h3 style="color: white;">Project Title 4</h3>
+          <p style="color: white;"></p>Brief description of the project goes here.</p>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project" data-aos="fade-up">
+          <img src="Screenshot (28).png" alt="Project 5" />
+          <h3 style="color: white;">Project Title 5</h3>
+          <p style="color: white;">Brief description of the project goes here.</p>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project" data-aos="fade-up">
+          <img src="Screenshot (28).png" alt="Project 6" />
+          <h3 style="color: white;">Project Title 6</h3>
+          <p style="color: white;"> style="color: white;"Brief description of the project goes here.</p>
+        </div>
+      </div>
+
+
+
+    </section>
+
+    <div class="pagrbreak" style="background-color: rgb(169, 163, 163);width: 100%; height: 3px;"></div>
+
+
+    <!----contact section--->
+
+    <div class="contact-form" id="contactSection" style="height: 100%;" data-aos="zoom-in">
+      <div class="heading" style="
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 40px;
+    ">
+      <h2 style="padding-top: 10vw;
+        color: #75ffe8;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 300;
+        margin: 0;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      ">
+        Get in touch
+      </h2>
+      <h2 style="
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+        font-weight: 300;
+        margin-top: 10px;
+        color: #ffffff;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      ">
+        Contact Me
+      </h2>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="formcontainer" style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+    ">
+      <form style="
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        max-width: 600px;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      " onsubmit="event.preventDefault(); sendMessage()" method="POST">
+        <label for="name" style="
+          font-family: 'Roboto', sans-serif;
+          font-size: 1.2rem;
+          color: #ffffff;
+          margin-bottom: 5px;
+        ">
+          Name
+        </label>
+        <input class="labels" type="text" id="name" name="name" required style="
+          padding: 10px;
+          border-radius: 8px;
+          border: none;
+          margin-bottom: 20px;
+          font-size: 1rem;
+          font-family: 'Arial', sans-serif;
+        ">
+
+        <label for="email" style="
+          font-family: 'Roboto', sans-serif;
+          font-size: 1.2rem;
+          color: #ffffff;
+          margin-bottom: 5px;
+        ">
+          Email
+        </label>
+        <input class="labels" type="email" id="email" name="email" required style="
+          padding: 10px;
+          border-radius: 8px;
+          border: none;
+          margin-bottom: 20px;
+          font-size: 1rem;
+          font-family: 'Arial', sans-serif;
+        ">
+
+        <label for="message" style="
+          font-family: 'Roboto', sans-serif;
+          font-size: 1.2rem;
+          color: #ffffff;
+          margin-bottom: 5px;
+        ">
+          Message
+        </label>
+        <textarea class="labels" id="message" name="message" rows="4" required style="
+          padding: 10px;
+          border-radius: 8px;
+          border: none;
+          margin-bottom: 20px;
+          font-size: 1rem;
+          font-family: 'Arial', sans-serif;
+          resize: vertical;
+        "></textarea>
+
+        <button type="submit" 
+    >
+          Send Message
+        </button>
+      </form>
+    </div>
+
+    <!-- Contact Information -->
+    <div style="
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    ">
+      <p style="
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: #75ffe8;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      ">
+        Aviroop Ghosh
+      </p>
+      <p style="
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #ffffff;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      ">
+        Software Developer
+      </p>
+    </div>
+
+      <div class="social-icons" style=" 
+            transform: translateX(-100%);
+            animation: slideInLeft 1s forwards;">
+        <a2 href="https://x.com/AviroopGhosh12" target="_blank" class="social-icon">
+          <lord-icon  src="https://cdn.lordicon.com/lhscugaw.json" trigger="hover" stroke="bold"
+            state="hover-draw" colors="primary:#ffffff,secondary:#08a88a"></lord-icon>
+        </a2>
+        <a2 href="https://github.com/MyselfAviroop" target="_blank" class="social-icon1">
+          <lord-icon src="https://cdn.lordicon.com/vyahiuge.json" trigger="hover" stroke="bold"
+            colors="primary:#ffffff,secondary:#ffffff" style="top: 5px;"></lord-icon>
+        </a2>
+        <a2
+          href="https://www.linkedin.com/in/aviroop-ghosh-44776a292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank" class="social-icon">
+          <lord-icon src="https://cdn.lordicon.com/mdyiqybm.json" trigger="hover" stroke="bold" state="hover-draw"
+            colors="primary:#ffffff,secondary:#08a88a" style="top: 5px;"></lord-icon>
+        </a2>
+      </div>
+      <button style="position: fixed;bottom: 30px; right: 100px;" onclick="scrollToTop()">Back to Home</button>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

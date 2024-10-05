@@ -1,0 +1,1416 @@
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Container for the entire input section */
+.input {
+
+    background-color: bisque;
+
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Navbar container and styling */
+
+.navbar {
+    width: 100%;
+}
+
+.navbar-brand {
+    color: aqua;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-link {
+    color: aqua;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    opacity: 0.7;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.about {
+
+    flex: .6;
+
+}
+
+.hexagon-part {
+    flex: .4;
+    display: flex;
+    justify-content: center;
+    margin-left: 2.5vw;
+}
+
+.hexagon-shape {
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10vh;
+    background: transparent;
+
+    width: 550px;
+
+    height: 550px;
+    transform: rotate(-30deg) skewX(30deg) scaleY(.866);
+}
+
+.hexagon-shape:before {
+    position: absolute;
+    right: 6.7%;
+    bottom: 0;
+    left: 6.7%;
+    top: 0;
+    transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
+    background-image: url(myimg.jpg);
+    background-size: cover;
+    /* This will make the background image cover the entire container */
+    background-position: center;
+    /* This will center the background image within the container */
+
+    content: '';
+}
+
+
+
+.name {
+    margin: 20px 0;
+    /* Add some spacing above and below */
+    font-size: 2rem;
+    /* Adjust font size as needed */
+    color: whitesmoke;
+}
+
+h1 {
+    z-index: 333;
+    margin-top: 9px;
+    margin-bottom: 14px;
+}
+
+h2 {
+    z-index: 333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.lets-talk-btn {
+    background-color: aqua;
+    /* Green */
+    border: none;
+    color: black;
+    font-weight: 500;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    cursor: pointer;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+
+
+
+
+.sidebar { color: white;  box-shadow: -1px 0 68px aqua;
+    width: 300px; /* Fixed width for a more controlled layout */
+    padding: 20px;
+    color: #333; /* Darker text for better contrast */
+    background-color: rgba(0, 0, 0, 0.8); /* Slight transparency for a modern effect */
+    position: fixed;
+    top: 0;
+    right: 0;
+  /* Full height for a professional side panel */
+    backdrop-filter: blur(10px); /* Softer blur for the background */
+  height: 100vh;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Consistent spacing between items */
+    z-index: 33553;
+    opacity: 1;
+    visibility: visible;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateX(0); /* Sidebar slides in from the right */
+  }
+  
+  .sidebar-hidden {
+    opacity: 0;
+    transform: translateX(100%); /* Hide sidebar off-screen */
+    visibility: hidden;
+  }
+  
+  .sidebar a, .sidebar button {
+    color: #fff4f4; /* Consistent color for text */
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .sidebar a:hover, .sidebar button:hover {
+    background-color: rgba(0, 150, 136, 0.1); /* Hover effect with soft background */
+    color: #009688; /* Accent color for links on hover */
+  }
+  
+  /* Close icon */
+  .sidebar a svg {
+    fill:aqua; /* Red close icon for visibility */
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar a svg:hover {
+    transform: scale(1.1); /* Slight scale effect on hover */
+  }
+
+
+.menubar {
+    position: fixed;
+    top: 15px;
+    right: 30px;
+    color: white;
+    z-index: 9999;
+
+    display: none;
+}
+
+@media screen and (max-width:992.98px) {
+    .navbar-collapse {
+        display: none;
+    }
+
+    .menubar {
+        color: #ffffff;
+        display: flex;
+    }
+}
+
+/* Reset default styles */
+
+
+
+
+
+.chead {
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: aqua;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+#name,
+#email,
+#message {
+    background-color: #2a2c2c;
+}
+
+
+
+
+
+.me {
+    background-color: #1f1d1d;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.me h1 {
+
+    background-color: none;
+}
+
+.social-links {
+    display: flex;
+    /* Arrange icons horizontally */
+    justify-content: center;
+    /* Distribute icons evenly */
+}
+
+.social-links a {
+    margin: 0 10px;
+    /* Add spacing between icons */
+    color: aqua;
+    /* Inherit text color from parent */
+}
+
+.social-links i {
+    font-size: 24px;
+    /* Adjust icon size as needed */
+}
+
+.input {
+
+    opacity: 80%;
+    background-color: rgb(0, 0, 0);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+textarea {
+    width: 100%;
+    /* Ensure inputs take full width of their container */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* Include padding and border in total width and height */
+}
+
+
+.social-icons {
+    width: 100%;
+    display: flex;
+    grid-area: 10px;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    /* Allow icons to wrap to the next line on smaller screens */
+}
+
+.social-icons a2 {
+    display: inline-block;
+    margin: 0 10px;
+    gap: 10px;
+    color: aqua;
+    font-size: 24px;
+    /* Adjust the size of the icons */
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center vertically */
+    align-items: center;
+    /* Center horizontally */
+    width: 100%;
+    min-height: 100vh;
+    /* Ensure body takes full viewport height */
+    padding: 10px;
+    /* Add padding to ensure content doesn't touch the edges */
+    margin: 0;
+    /* Remove default margins */
+}
+
+
+/* ... (existing styles) ... */
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+   
+    
+    div[role="progressbar"] {
+      
+        margin-left: 0;
+        
+    }
+   
+    .hexagon-part { width: 100%;
+  
+  justify-content: center;
+  align-items: center;
+        
+    }
+    .hexagon-shape:before {
+        position: absolute; 
+     
+        bottom: 0;
+
+        top: 0;
+        transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
+        background-image: url(myimg.jpg);
+        background-size: cover;
+        background-position: center;
+
+
+        content: '';
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    /* Adjusting body for tablet view */
+
+
+
+
+
+    .navi {
+        width: 100%;
+    }
+
+    /* Ensure form elements take full width */
+    input,
+    textarea {
+        width: 100%;
+        /* Full width on smaller screens */
+        padding: 12px;
+        /* Increase padding for better touch experience */
+    }
+
+   
+
+    /* Make the button responsive */
+    button {
+        width: 91%;
+        /* Full width on tablet screens */
+        padding: 12px;
+        /* Increase padding for easier touch interaction */
+    }
+}
+
+
+
+a2 {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 63px;
+    background: #333;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #666;
+    transition: .5s;
+}
+
+a2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #10ffff;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+a2:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px#10ffff;
+}
+
+a2:hover {
+    color: #ffee10;
+    box-shadow: 0 0 5px #10ffff;
+    text-shadow: 0 0 5px#10ffff;
+}
+
+.content-about {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: transform 0.8s ease-in-out;
+    transform: translateY(100%);
+    /* Initially hidden */
+}
+
+
+
+
+.main {
+    transition: transform 0.8s ease-in-out;
+}
+
+body {
+    overflow: auto;
+    /* Allow scrolling */
+}
+
+.main {
+    transition: transform 0.8s ease-in-out;
+   
+}
+
+.page-break {
+    background-color: white;
+    height: 10px;
+    /* Adjust this value to create the desired space */
+    width: 100%;
+    /* Alternatively, you can use margin-top or padding-top */
+}
+
+
+
+.fcontainer {
+
+  width: 100%;
+    /* Maximum width */
+    margin: 0 auto;
+    /* Center container */
+    padding-top: 30px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    /* Include padding and border in total width and height */
+}
+
+#name,
+#email {
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 45px;
+    padding: 10px;
+}
+
+button {
+    display: flex;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    justify-content: center;
+    background-color: aqua;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #035c62;
+}
+
+
+
+
+
+/*****SKILL SECTION*****/
+.skillcontainer {
+    display: flex;
+}
+
+.skill {
+    margin-top: 30px;
+    font-size: 17px;
+}
+
+
+
+.skill div {
+    width: 100%;
+    float: left;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.skill div span {
+    background: #52ede8;
+    height: 5px;
+    float: left;
+
+}
+
+div[role="progressbar"] {
+    color: #52ede8;
+   
+    margin-bottom: 20px;
+    width: 100px;
+    ;
+    height: 100px;
+    ;
+    border-radius: 50%;
+
+    place-items: center;
+    display: grid;
+
+    --pgPercentage: var(--value);
+    background: radial-gradient(closest-side, black 80%, transparent 0 99.9%, black 0),
+        conic-gradient(#52ede8 calc(var(--pgPercentage) * 1%), #ffffff 0);
+
+}
+
+.skillcontainer {
+    display: flex;
+    flex-direction: row;
+    /* Stack vertically for better mobile responsiveness */
+    width: 100%;
+    /* Make it take the full width */
+    gap: 20px;
+    /* Add some spacing between skill bars */
+}
+
+.pbar {
+    flex: .5;
+}
+
+.circle {
+    padding-top: 30px;
+    padding-left: 100px;
+    display: flex;
+    flex: .5;
+}
+
+/*ABOUT US SECTION*/
+.main-section {
+    width: 100%;
+
+
+}
+
+.main-section2 {
+    padding-bottom: 50px;
+}
+
+.acontainer {
+    display: flex;
+}
+
+.width-100 {
+    width: 100%;
+
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.heading-text {
+    width: 100%;
+
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #31ffe4;
+}
+
+.about-img {
+    height: 100px;
+    width: 100%;
+    padding: 0px 50px;
+    margin-top: 20px;
+}
+
+.about-us {
+    width: 100%;
+
+
+}
+
+.about-us p {
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 27px;
+}
+
+table {
+    width: 100%;
+}
+
+table th,
+table td {
+    font-size: 16px;
+    text-align: left;
+    padding: 5px 0px;
+}
+
+.hexagon-shape1:before {
+    position: absolute;
+    right: 6.7%;
+    bottom: 0;
+    left: 6.7%;
+    top: 0;
+    transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
+    background-image: url(aboutimg.jpg);
+    background-size: cover;
+    /* This will make the background image cover the entire container */
+    background-position: center;
+    /* This will center the background image within the container */
+
+    content: '';
+}
+
+.hexagon-shape1 {
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10vh;
+    background: transparent;
+
+    width: 450px;
+
+    height: 450px;
+    transform: rotate(-30deg) skewX(30deg) scaleY(.866);
+}
+.hexagon-shape2:before {
+    position: absolute;
+    right: 6.7%;
+    bottom: 0;
+    left: 6.7%;
+    top: 0;
+    transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
+    background-image: url(myimg.jpg);
+    background-size: cover;
+    /* This will make the background image cover the entire container */
+    background-position: center;
+    /* This will center the background image within the container */
+
+    content: '';
+}
+
+
+
+.heading-text {
+    padding-top: 40px;
+}
+
+.myself {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.abt1 {
+    width: 50vw;
+    flex: .5;
+}
+
+.abt2 {
+    padding-left: 50px;
+    flex: .5;
+    width: 50vw;
+}
+
+
+@media (max-width: 768px) {
+    .acontainer {
+        flex-direction: column;
+        /* Stack content vertically on smaller screens */
+        align-items: center;
+    }
+  .circle {
+    margin-left: 0%;
+        flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center; /* Stack circular progress bars vertically */
+    }
+
+    .pbar,
+    .circle {
+        flex: 1;
+        width: 100%;
+    }
+     .hexagon-shape {
+        width: 90vw;
+        height: 90vw;
+    }
+
+
+    .hexagon-shape1 {
+        width: 90vw;
+        height: 90vw;
+    }  .hexagon-shape2 {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .about-us p {
+        font-size: 12px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .abt2 {
+        padding-left: 0px;
+    }
+
+    table th,
+    table td {
+        font-size: 14px;
+        /* Adjust table font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .heading-text {
+        font-size: 28px;
+    }
+
+    .hexagon-shape1 {
+        width: 60vw;
+        height: 60vw;
+    } .hexagon-shape2 {
+        width: 60vw;
+        height: 60vw;
+    }
+  
+    table th,
+    table td {
+        font-size: 12px;
+    }
+
+
+    .myself {
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+    .skillcontainer {
+        flex-direction: column;
+
+        align-items: center;
+    }
+    
+}
+
+.circle {
+    padding: 0%
+}
+
+
+
+.portfolio-section {
+   padding: 50px;
+    background-color: #000000; position: relative; /* This can help with z-index issues */
+}
+
+
+.portfolio-heading {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Ensures items wrap to the next line */
+    justify-content: space-between;
+}
+
+.project {
+    background-color: #000000;
+    border: 2px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    /* Each project div takes 30% of the row's width */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.project p {
+    font-size: 16px;
+    color: #666;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .project {
+        width: 48%;
+        /* On smaller screens, projects will take more width */
+    }
+
+    h5 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .project {
+        width: 100%;
+        /* On very small screens, each project will take full width */
+    }
+
+    .about {
+        margin-right: 5px;
+    }
+    
+}/* Base styles for projects */
+.project {
+    background-color: #000000;
+    border: 2px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%; /* Default width for larger screens */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .project {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 15px; /* Adjust bottom margin for spacing */
+    }
+    .main{
+        margin-top: 65px;
+        width: 100%;
+        scroll-behavior: smooth;
+    }
+    .hexagon-part{
+        margin-top: 0;
+    }  .heading{ position: relative;
+        top: 1vh; }
+}
+
+
+/* Hover effect for project */
+.project:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    /* Slightly increase size */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Deepen the shadow */
+}
+
+/* Active state when clicking */
+.project.active {
+    transform: scale(1.1);
+    /* Increase the size more when clicked */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    /* Deeper shadow */
+}
+
+.portfolio-section {
+    padding-top: 50px;
+}
+
+.chead {
+    padding-top: 50px;
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 0;
+    left: 20px;
+    display: none;
+    /* Initially hidden */
+    background-color: aqua;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    /* Ensures it's on top of other content */
+}
+
+#scrollTopBtn:hover {
+    background-color: #75ffe8;
+}
+
+#scrollTopBtn i {
+    font-size: 18px;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.main {
+    flex-wrap: wrap;
+
+    width: 100%;
+    /* Ensure it doesn’t exceed the viewport width */
+}
+
+body {
+    overflow-x: hidden;
+    /* Prevent horizontal overflow */
+}
+.skillsec{
+    overflow-x: hidden;
+}
+.send {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+  @media (max-width: 380px) {
+      .hexagon-part {
+          width: 80px; /* Adjust width for smaller screens */
+          height: 80px; /* Adjust height for smaller screens */
+      }
+
+    
+  }
+
+
+
+/*animations*/
+.main {
+    display: flex;
+    justify-content: space-between;
+  
+    overflow-x: hidden;
+}
+
+
+
+@keyframes slideUp {
+    from {
+      transform: translateY(20px); /* Start 20px below */
+      opacity: 0; /* Start hidden */
+    }
+    to {
+      transform: translateY(0); /* Move to original position */
+      opacity: 1; /* Fully visible */
+    }
+  }
+
+@keyframes slideInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slideDown {
+    from {
+      transform: translateY(-20px); /* Start 20px above */
+      opacity: 0; /* Start hidden */
+    }
+    to {
+      transform: translateY(0); /* Move to original position */
+      opacity: 1; /* Fully visible */
+    }
+  }
+
+
+
+.popup-container {
+  position: fixed; /* Fixes the container to the viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none; /* Hide by default */
+  background-color: rgba(0, 0, 0, 0.7); /* Optional: semi-transparent background */
+  z-index: 1000; /* Make sure it overlays above other elements */
+}
+
+.popup-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.5s ease-in-out; /* Smooth transition */
+}
+
+.popup-section.active {
+  display: flex; /* Show when active */
+  opacity: 1; /* Fade in */
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px); /* Start slightly lower */
+        opacity: 0; /* Start transparent */
+    }
+    to {
+        transform: translateY(0); /* End at original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+/* Apply the animation to the project class */
+.project {
+    animation: slideUp 0.5s ease forwards; /* Add animation to project cards */
+    opacity: 0; /* Initially set to transparent for animation */
+}
+
+/* Delay the animation for each project card */
+.project:nth-child(1) {
+    animation-delay: 0s;
+}
+.project:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.project:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.project:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.project:nth-child(5) {
+    animation-delay: 0.4s;
+}
+.project:nth-child(6) {
+    animation-delay: 0.5s;
+}
+/* Base styles for the navbar */
+.navbar {
+    background-color: #000; /* Dark background */
+  }
+  
+  .nav-link {
+    color: aqua; /* Text color */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    z-index: 10000;
+  }
+  
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: aqua;
+    transition: all 0.4s ease-in-out;
+    z-index: -1;
+  }
+  
+  .nav-link:hover::before {
+    left: 0; /* Slide background in on hover */
+  }
+  
+  .nav-link:hover {
+    color: #000; /* Change text color when hovered */
+  }
+  
+  /* Hover effect for buttons */
+  .nav-link:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 30px aqua;
+  }
+  
+  /* Click effect */
+  .nav-link:active {
+    transform: scale(0.95); /* Slightly shrink when clicked */
+    transition: transform 0.1s ease; /* Quick pop effect */
+  }
+  
+  /* Button text hover transition */
+  .nav-link:hover {
+    color: #000; /* Change text color to black on hover */
+  }
+  
+  /* Glow effect on hover */
+  .nav-link:hover {
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8), 0 0 25px rgba(0, 255, 255, 0.6);
+  }
+  
+/* Base styles for the logo */
+.navbar-brand { left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: aqua;
+    letter-spacing: 1.5px;
+   
+    position: relative;
+    display: inline-block;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  /* Subtle hover animation */
+  .navbar-brand:hover {
+    color: #ffffff; /* Change text color slightly on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth scaling and color change */
+  }
+  
+  /* Underline effect */
+  .navbar-brand::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px; /* Position underline just below the text */
+    left: 0;
+    background-color: aqua;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .navbar-brand:hover::after {
+    width: 100%; /* Expand underline on hover */
+  }
+  
+  /* Optional: Slight opacity change on hover */
+  .navbar-brand:hover {
+    opacity: 0.85; /* Reduce opacity on hover for a sleek look */
+  }
+    /* Base styles for the button */
+button {
+    background-color: transparent;
+    color: aqua;
+    border: 2px solid aqua;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* Add a background slide-in effect */
+  button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: aqua;
+    transition: all 0.4s ease-in-out;
+    z-index: -1;
+  }
+  
+  button:hover::before {
+    left: 0; /* Slide the background in on hover */
+  }
+  
+  button:hover {
+    color: #000; /* Change the text color on hover */
+  }
+  
+  /* Click effect for button */
+  button:active {
+    transform: scale(0.98); /* Slightly shrink on click */
+    transition: transform 0.1s ease;
+  }
+  .contact-form { position:relative;
+     opacity: 95%;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   overflow: hidden;
+    width: 100vw;
+  }
+.heading{
+    padding-top: 8vh;
+}
+  .contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #3aead2;
+  }
+
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+
+ 
+.labels{
+    transform: translateX(100%);
+    animation: slideInRight 0.9s forwards;
+}/* Ensure the contact section is positioned relatively */
+#contactSection {
+    position: relative;
+    overflow: hidden; /* To contain the globe if necessary */
+  }
+  
+  /* Style adjustments for the globe container */
+  #globe-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Behind other content */
+  }
+  
+  /* Optional: Add a subtle overlay to make text readable */
+  #contactSection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    z-index: -1;
+  }
+
+
+
+  .name{
+    padding-top: 20vh;
+  }.heading-text{
+    padding-top: 20vh;
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+
+.name{
+    padding-top: 5vh;
+}
+.heading-text{
+    padding-top: 5vh;
+  }
+
+  }/* CSS to hide the sidebar by default */
+.sidebar {
+    display: none; /* Hide sidebar by default */
+    /* Other sidebar styles */
+  }
+  
+  .sidebar.sidebar-hidden {
+    display: block; /* Show sidebar when this class is removed */
+  }
+  
+  /* Optional: Styles for smaller screens */
+  @media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .sidebar {
+      display: none; /* Ensure it's hidden on smaller screens */
+    }
+  
+    .sidebar-visible {
+      display: block; /* Show sidebar when this class is added */
+    }
+  }
+  

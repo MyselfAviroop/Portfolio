@@ -1413,4 +1413,9 @@ button {
       display: block; /* Show sidebar when this class is added */
     }
   }
-  
+  @media (max-width: 768px) {
+    #backToHome {
+        right: 50%;
+        transform: translateX(50%);
+    }
+}  
